@@ -36,9 +36,8 @@ function Card({ data, direction }) {
             <div className="image-container">
               <div className="image-glow"></div>
 
-              {/* ✅ FIXED IMAGE SOURCE */}
               <img
-                src={import.meta.env.BASE_URL + data.image.replace(/^\//, '')}
+                src={data.image}
                 alt={data.title}
                 className="card-image"
               />
